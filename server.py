@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "starlette",
+#     "uvicorn",
+# ]
+# ///
 import os
 import sys
 
@@ -60,6 +67,9 @@ app = Starlette(routes=routes, middleware=middleware)
 
 
 def main() -> None:
+    if len(sys.argv) == 1:
+        print("usage: server.py directory [port]")
+        return
     os.chdir(sys.argv[1])
     port = int(sys.argv[2]) if len(sys.argv) == 3 else 5005
     uvicorn.run("server:app", host='127.0.0.1', port=port, log_level="info")
