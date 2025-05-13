@@ -1,4 +1,5 @@
 name = "PyCon US Tutorial 4"
+interpreter = "../bundle/micropython.mjs"
 
 [files]
 "./libthree.py" = ""
@@ -6,6 +7,6 @@ name = "PyCon US Tutorial 4"
 
 [js_modules.main]
 "./glue/uniforms.js" = "uniforms"
-"https://cdn.jsdelivr.net/npm/three@v0.176.0/build/three.module.js" = "three"
-"https://cdn.jsdelivr.net/npm/three@v0.176.0/examples/jsm/controls/OrbitControls.js" = "oc"
-"https://cdn.jsdelivr.net/npm/stats-gl@3.6.0/dist/main.js" = "stats_gl"
+"../bundle/three.js/build/three.module.js" = "three"
+"../bundle/three.js/examples/jsm/controls/OrbitControls.js" = "oc"
+"../bundle/stats-gl.js" = "stats_gl"

@@ -1,8 +1,3 @@
-try:
-    from dataclasses import dataclass, field
-except ImportError:
-    from udataclasses import dataclass, field
-
 from pyscript import document, window, config
 
 # JS: import * as THREE from 'three';
@@ -13,7 +8,6 @@ from pyscript.js_modules.oc import OrbitControls
 
 # JS: import Stats from 'stats';
 from pyscript.js_modules.stats_gl import default as StatsGL
-from pyscript.js_modules import uniforms
 
 from pyscript.ffi import to_js, create_proxy
 
