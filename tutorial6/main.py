@@ -104,7 +104,7 @@ class Comparison(SceneBase):
 
         fonts = new(FontLoader)
         fonts.load(
-            "bundle/three.js/examples/fonts/helvetiker_regular.typeface.json",
+            "../bundle/three.js/examples/fonts/helvetiker_regular.typeface.json",
             self._on_font_load,
         )
 
