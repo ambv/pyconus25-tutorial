@@ -1,5 +1,7 @@
 # Source code for the PyScript + WebGL tutorial at PyCon US 2025
 
+![Rotating 3D logo](_index/python-logo-loop.gif)
+
 The `bundle/` directory is a self-contained, well, bundle of all
 dependencies you need to run a PyScript application with Three.js
 and Stats-gl. This allows the lessons here to run offline by using
