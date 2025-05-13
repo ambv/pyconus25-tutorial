@@ -142,5 +142,4 @@ def animate(now=0.0):
 stats_gl = get_stats_gl(renderer)
 renderer.setAnimationLoop(animate)
 
-animate()
 import code; code.interact()
