@@ -8,7 +8,7 @@ from pyscript import document, window
 from pyscript import config
 from pyscript.ffi import create_proxy
 
-from libthree import THREE, new, call, uniforms, clear
+from libthree import THREE, new, clear
 from libthree import get_renderer, get_perspective_camera, get_controls
 from libthree import get_stats_gl
 

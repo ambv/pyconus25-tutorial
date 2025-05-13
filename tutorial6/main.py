@@ -4,14 +4,12 @@ import functools
 import math
 import random
 
-from pyscript import document, window
+from pyscript import document
 from pyscript import config
 from pyscript.ffi import create_proxy
 
-from libthree import THREE, new, call, uniforms, clear, dataclass, field
+from libthree import THREE, new, clear, dataclass, field
 from libthree import SceneBase, TextGeometry, FontLoader
-
-from js import Float32Array
 
 MICROPYTHON = config["type"] == "mpy"
 

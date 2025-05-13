@@ -1,8 +1,3 @@
-try:
-    from dataclasses import dataclass, field
-except ImportError:
-    from udataclasses import dataclass, field
-
 from pyscript import document, window, config
 
 # JS: import * as THREE from 'three';

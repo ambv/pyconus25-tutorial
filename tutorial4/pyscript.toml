@@ -3,7 +3,6 @@ interpreter = "../bundle/micropython.mjs"
 
 [files]
 "./libthree.py" = ""
-"./glue/udataclasses.py" = "./udataclasses.py"
 
 [js_modules.main]
 "./glue/uniforms.js" = "uniforms"
