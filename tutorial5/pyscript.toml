@@ -1,0 +1,14 @@
+name = "PyCon US Tutorial 4"
+interpreter = "./bundle/micropython.mjs"
+
+[files]
+"./libthree.py" = ""
+"./glue/udataclasses.py" = "./udataclasses.py"
+
+[js_modules.main]
+"./glue/uniforms.js" = "uniforms"
+"./bundle/three.js/build/three.module.js" = "three"
+"./bundle/three.js/examples/jsm/geometries/TextGeometry.js" = "tg"
+"./bundle/three.js/examples/jsm/loaders/FontLoader.js" = "font"
+"./bundle/three.js/examples/jsm/controls/OrbitControls.js" = "oc"
+"./bundle/stats-gl.js" = "stats_gl"
