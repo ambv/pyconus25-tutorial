@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
     
     <style>
-        body {
+        html, body {
             margin: 0;
+            padding: 0;
+            height: 100%;
             overflow: hidden;
-            background-color: #4a315e;
+        }
+
+        body {
             color: white;
             font-family: Inconsolata, Consolas, Monaco, Courier New;
+            background-image: url("_index/python-logo-loop.gif");
+            background-size: cover;
+            backdrop-filter: blur(10px);
         }
 
         a {
@@ -35,9 +42,7 @@
 </head>
 <body>
     <div id="container">
-        <p>
-            <img src="_index/python-logo-loop.gif">
-        </p>
+        <h1>WebGL with PyScript and Three.js</h1>
         <ul>
             <li><a href="/tutorial1">/tutorial1</a></li>
             <li><a href="/tutorial2">/tutorial2</a></li>
