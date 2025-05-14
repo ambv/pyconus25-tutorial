@@ -163,6 +163,7 @@ class SceneBase:
     view_size: int = field(default=50)
     controls: THREE.Controls = field(init=False)
     stats: StatsGL = field(init=False)
+    clock: THREE.Clock = field(default_factory=lambda: new(THREE.Clock))
 
     def __post_init__(self):
         self.scene.add(self.camera)
@@ -178,13 +179,13 @@ class SceneBase:
         uniforms.call_with_null(self.renderer.setAnimationLoop)
         document.getElementById("stats").replaceChildren()
 
-    def animate(self, now=0.0):
+    def animate(self, now, delta):
         # your logic goes here in sub-classes
         pass
 
     def _animate(self, now=0.0):
         self.controls.update()
-        self.animate(now)
+        self.animate(now, self.clock.getDelta())
         self.renderer.render(self.scene, self.camera)
         self.stats.update()
 

@@ -24,16 +24,17 @@ if not MICROPYTHON:
 class Comparison(SceneBase):
     point_light: THREE.PointLight = field(init=False)
     spot_light: THREE.SpotLight = field(init=False)
+    texture_loader: THREE.TextureLoader = field(init=False)
     plane: THREE.Mesh = field(init=False)
     box: THREE.Mesh = field(init=False)
     cone: THREE.Mesh = field(init=False)
     text: THREE.Mesh = field(init=False)
     floor: THREE.Mesh = field(init=False)
-    texture_loader: THREE.TextureLoader = field(default=new(THREE.TextureLoader))
 
     def __post_init__(self):
         super().__post_init__()
         self.scene.fog = new(THREE.Fog, 0x000000, 10, 100)
+        self.texture_loader = new(THREE.TextureLoader)
 
         self.point_light = new(THREE.PointLight, 0xFFFFFF, 1, 0, 0.1)
         self.point_light.name = "PointLight"

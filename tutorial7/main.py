@@ -26,7 +26,7 @@ if not MICROPYTHON:
 class Voxels(SceneBase):
     point_light: THREE.PointLight = field(init=False)
     spot_light: THREE.SpotLight = field(init=False)
-    texture_loader: THREE.TextureLoader = field(default=new(THREE.TextureLoader))
+    texture_loader: THREE.TextureLoader = field(init=False)
     grid_h: int = field(default=100)
     grid_w: int = field(default=100)
     grid_scale: int = field(default=10)
@@ -35,6 +35,7 @@ class Voxels(SceneBase):
 
     def __post_init__(self):
         super().__post_init__()
+        self.texture_loader = new(THREE.TextureLoader)
 
         grid_center_x = self.grid_w / 2
         grid_center_y = self.grid_h / 2
