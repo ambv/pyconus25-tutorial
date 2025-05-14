@@ -10,8 +10,6 @@ from pyscript.js_modules import three as THREE
 
 # JS: import { OrbitControls } from 'oc';
 from pyscript.js_modules.oc import OrbitControls
-from pyscript.js_modules.font import FontLoader
-from pyscript.js_modules.tg import TextGeometry
 
 # JS: import Stats from 'stats';
 from pyscript.js_modules.stats_gl import default as StatsGL
