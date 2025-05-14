@@ -1,0 +1,13 @@
+name = "PyCon US Tutorial 8"
+interpreter = "../bundle/pyodide/pyodide.mjs"
+
+[files]
+"./libthree.py" = ""
+"./glue/udataclasses.py" = "./udataclasses.py"
+
+[js_modules.main]
+"./glue/uniforms.js" = "uniforms"
+"../bundle/three.js/build/three.module.js" = "three"
+"../bundle/three.js/examples/jsm/controls/OrbitControls.js" = "oc"
+"../bundle/three.js/examples/jsm/loaders/GLTFLoader.js" = "gltf"
+"../bundle/stats-gl.js" = "stats_gl"

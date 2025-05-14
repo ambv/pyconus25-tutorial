@@ -1,0 +1,11 @@
+Model Information:
+* title:	Python
+* source:	https://sketchfab.com/3d-models/python-8be4a2579dd84586b915068e475073ee
+* author:	AnshiNoWara (https://sketchfab.com/AnshiNoWara)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Python" (https://sketchfab.com/3d-models/python-8be4a2579dd84586b915068e475073ee) by AnshiNoWara (https://sketchfab.com/AnshiNoWara) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
