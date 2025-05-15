@@ -1,5 +1,4 @@
 name = "PyCon US Tutorial 3"
-interpreter = "../bundle/micropython.mjs"
 
 [files]
 "./libthree.py" = ""
