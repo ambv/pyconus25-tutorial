@@ -1,4 +1,4 @@
-name = "PyCon US Tutorial 8"
+name = "PyCon US Tutorial 9"
 interpreter = "../bundle/pyodide/pyodide.mjs"
 
 [files]
