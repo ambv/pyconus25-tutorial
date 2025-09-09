@@ -200,7 +200,7 @@ def _init(fields: list[Field], post_init: bool = False) -> str:
 def init_initialize_field(f: Field) -> str:
     """__init__() body line to assign field an initial value.
 
-    Empty string if no initializion is needed.
+    Empty string if no initialization is needed.
     """
     left = f"self.{f._name}"
     if f.init:

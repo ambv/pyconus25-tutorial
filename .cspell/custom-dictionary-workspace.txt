@@ -1,0 +1,17 @@
+# Custom Dictionary Words
+alphamap
+bumpmap
+Diony
+dunder
+fxaa
+gltf
+helvetiker
+lerp
+libthree
+metalness
+MICROPYTHON
+perlin
+pyterm
+pyterms
+threejs
+udataclasses
